@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi!Tanaporn333</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+            
+        }
+        
+
+        @media screen and (max-width:480px) {
+            .container {
+                grid-template-columns: repeat(1fr);
+                grid-gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+<!--แถบเมนูบน-->
+    <nav>
+        
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <div class="logo">
+            <h1>TANAPORN</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+
+
+    <!--รูปเคลื่อน-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/A1book.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/A2mon.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/A3bla.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<br>
+<br>
+<br>
+
+    <!--รูปกล่องข้างล่าง-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/ภูเขา.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">หัวข้อใหญ่</h5>
+              <p class="card-text">เนื้อหาและรายละเอียดต่างๆที่อยากจะนำเสนอ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/A5gg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">หัวข้อใหญ่</h5>
+              <p class="card-text">เนื้อหาและรายละเอียดต่างๆที่อยากจะนำเสนอ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/A6nug.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">หัวข้อใหญ่</h5>
+              <p class="card-text">เนื้อหาและรายละเอียดต่างๆที่อยากจะนำเสนอ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
